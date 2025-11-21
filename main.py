@@ -34,7 +34,7 @@ FEATURE_NAMES_DICT = {"delta_DNAs_cumu_bin":"DNA binding site (Δ residues) ","d
                  "delta_hydrophobicMoment":"Hydrophobic moment","delta_hydrophobicity":"Hydrophobicity (GRAVY)",
                  "delta_isoElecPoint":"Isoelectric point (pH)", "delta_total.energy":"Folding energy ΔG (kJ/mol)"}
 
-HEADER_TEXT = "Pathogenicity prediction by the Digital Approximation of Variant Effect, version 1 (DAVE1) model on 11k+ VUS variants from the April 2024 release of the <a href=https://vkgl.molgeniscloud.org target='_blank' rel='noopener noreferrer' > VKGL datasharing</a>. \
+HEADER_TEXT = "Pathogenicity probability prediction by the Digital Approximation of Variant Effect (DAVE) model on 11k+ VUS variants from the April 2024 release of the <a href=https://vkgl.molgeniscloud.org target='_blank' rel='noopener noreferrer' > VKGL datasharing</a>. \
                 The ideal cutoff point for Likely Pathogenic classification >= 0.286. For more information please refer to: DOI"
 ###
 
@@ -59,7 +59,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown("<h1 style='text-align: center; color: #555; font-size:40px;'>DAVE1 scores VKGL Datasharing VUS</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #555; font-size:40px;'>DAVE results VKGL Datasharing VUS</h1>", unsafe_allow_html=True)
 st.markdown(f"<p style='text-align: left; font-size: small; color: #B0B0B0;'>{HEADER_TEXT}</p>", unsafe_allow_html=True)
 # Load VUS data
 vus_path = "vkgl_apr2024_VUS_pred.csv"
@@ -87,7 +87,7 @@ else:
     filtered_data = vkgl_consensus_vus
 
 edited_df = st.dataframe(
-    filtered_data[["LP","gene","dna_variant_chrom","dna_variant_pos","dna_variant_ref","dna_variant_alt","AA change","TranscriptID"]].rename(columns={"LP":"DAVE1 LP score",
+    filtered_data[["LP","gene","dna_variant_chrom","dna_variant_pos","dna_variant_ref","dna_variant_alt","AA change","TranscriptID"]].rename(columns={"LP":"DAVE LP proba",
                                                                                                                                                             "dna_variant_chrom":"chrom",
                                                                                                                                                             "dna_variant_pos":"pos",
                                                                                                                                                             "dna_variant_ref":"ref",

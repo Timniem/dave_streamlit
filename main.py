@@ -34,8 +34,8 @@ FEATURE_NAMES_DICT = {"delta_DNAs_cumu_bin":"DNA binding site (Δ residues) ","d
                  "delta_hydrophobicMoment":"Hydrophobic moment","delta_hydrophobicity":"Hydrophobicity (GRAVY)",
                  "delta_isoElecPoint":"Isoelectric point (pH)", "delta_total.energy":"Folding energy ΔG (kJ/mol)"}
 
-HEADER_TEXT = "Pathogenicity probability prediction by the Digital Approximation of Variant Effect (DAVE) model on 11k+ VUS variants from the April 2024 release of the <a href=https://vkgl.molgeniscloud.org target='_blank' rel='noopener noreferrer' > VKGL datasharing</a>. \
-                The ideal cutoff point for Likely Pathogenic classification >= 0.286. For more information please refer to: DOI"
+HEADER_TEXT = "Pathogenicity probability prediction from the Digital Approximation of Variant Effect (DAVE) model on 11k+ VUS variants from the April 2024 release of the <a href=https://vkgl.molgeniscloud.org target='_blank' rel='noopener noreferrer' > VKGL datasharing</a> initiative. \
+                The ideal cutoff point for Likely Pathogenic classification >= 0.286. Read more in our preprint: <a href=https://doi.org/10.1101/2025.11.25.25340947 target='_blank' rel='noopener noreferrer' > https://doi.org/10.1101/2025.11.25.25340947</a>"
 ###
 
 

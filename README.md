@@ -2,7 +2,7 @@
 
 This Streamlit app provides an interactive interface for exploring DAVE pathogenicity predictions of Variants of Uncertain Significance (VUS) from the VKGL consensus datasharing. It integrates data visualization, protein structure modeling, and molecular feature analysis to support variant interpretation in a clinical genomics context.
 
-Our article is now in preprint! DOI: xxxx.xx.xx.xx
+Our article is now in preprint! [https://doi.org/10.1101/2025.11.25.25340947](https://doi.org/10.1101/2025.11.25.25340947)
 
 ---
 

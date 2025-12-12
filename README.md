@@ -35,10 +35,10 @@ Download files:
 # Go into the downloaded repository:
 cd dave_streamlit
 # Download the required files: 
-wget https://github.com/molgenis/dave/blob/main/data/vkgl_apr2024_VUS_pred.csv.gz
+wget https://github.com/molgenis/dave/raw/refs/heads/main/data/vkgl_apr2024_VUS_pred.csv.gz
 wget https://zenodo.org/records/17435480/files/mut_wt_structures_vkgl_vus.tar.gz
 #or curl using:
-#curl -O https://github.com/molgenis/dave/blob/main/data/vkgl_apr2024_VUS_pred.csv.gz
+#curl -O https://github.com/molgenis/dave/raw/refs/heads/main/data/vkgl_apr2024_VUS_pred.csv.gz
 #curl -O https://zenodo.org/records/17435480/files/mut_wt_structures_vkgl_vus.tar.gz
 ```
 

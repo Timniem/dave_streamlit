@@ -1,0 +1,55 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Helm chart (not needed in Docker image)
+helm-chart/
+*.yaml
+Chart.yaml
+values.yaml
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Documentation
+README.md
+*.md
+docs/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node modules (if using npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+Jenkinsfile
